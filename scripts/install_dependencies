@@ -1,9 +1,9 @@
 #!/bin/bash
-mkdir ~/archive
+mkdir /home/jiren/archive
 yum install -y httpd
 
 ls /var/www/html/test*
 
 if [ $? -eq 0 ]; then
- mv /var/www/html/test* ~/archive 
+ mv /var/www/html/test* /home/jiren/archive 
 fi
