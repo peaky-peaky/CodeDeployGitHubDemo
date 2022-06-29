@@ -1,3 +1,9 @@
 #!/bin/bash
+mkdir ~/archive
 yum install -y httpd
 
+ls /var/www/html/test*
+
+if [ $? -eq 0 ]; then
+ mv /var/www/html/test* ~/archive 
+fi
