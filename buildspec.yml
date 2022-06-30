@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Hello, World! (phase=install)"
+      - echo "Hello, World2! (phase=install)"
   pre_build:
     commands:
       - echo "Hello, World! (phase=pre_build)"
