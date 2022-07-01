@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo "Hello, World! (phase=build)"
-      - ls -al /home/vagrant
+      - ls -al /home/jiren
   post_build:
     commands:
       - echo "Hello, World! (phase=post_build)"
