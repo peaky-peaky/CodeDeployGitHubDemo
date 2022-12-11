@@ -1,3 +1,14 @@
 #!/bin/bash
-apt install -y apache2
+mkdir /home/jiren/archive
+yum install -y httpd
 
+ls /var/www/html/test*
+
+if [ $? -eq 0 ]; then
+ file=$(ls /var/www/html | grep test)
+ for i in $file
+ do
+ mv /var/www/html/$i /var/www/html/${i}-$(date +%Y-%m-%d)
+ done
+ mv /var/www/html/test* /home/jiren/archive 
+fi
