@@ -2,12 +2,15 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo "test"
+    runtime-versions:
+      nodejs: 10
   pre_build:
     commands:
-      - sudo yum update
+      - npm update -g npm
+      - npm install
   build:
     commands:
-      - echo "Hello, World! (phase=build)"
-      - ls -al /home/vagrant
+      - npm run build
+artifacts:
+  files:
+    - '**/*'
