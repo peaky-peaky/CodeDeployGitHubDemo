@@ -1,6 +1,3 @@
 #!/bin/bash
-isExistApp = `pgrep apache2`
-if [[ -n  $isExistApp ]]; then
-    service httpd stop        
-fi
 
+sed -i s/PWD=$(dirname $0)/PWD=$(dirname $1)/g /home/jiren/test/openstackope.sh

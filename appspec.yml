@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /test2.html
-    destination: /var/www/html/
+  - source: /codebuild-demo/openstackope.sh
+    destination: /home/jiren/test/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
