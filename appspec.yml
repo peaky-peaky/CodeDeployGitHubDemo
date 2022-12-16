@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /test3.yml
-    destination: /var/www/html
+  - source: /test2.yml
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
