@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /test.yml
+  - source: /test2.yml
     destination: /var/www/html
 hooks:
   BeforeInstall:
