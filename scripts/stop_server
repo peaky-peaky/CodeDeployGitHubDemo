@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo sed -i "s/PREV_IFS=\$IFS/PREV_IFS=\$IFSD/g" /home/jiren/test/openstackope.sh
+sudo chmod 777 /home/jiren/test/openstackope.sh
+sudo chown jiren:jiren /home/jiren/test/openstackope.sh
