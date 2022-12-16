@@ -1,4 +1,3 @@
 #!/bin/bash
 
-sudo chmod 777 /home/jiren/test/openstackope.sh
-sudo chown jiren:jiren /home/jiren/test/openstackope.sh
+mkdir /home/jiren/mmm
