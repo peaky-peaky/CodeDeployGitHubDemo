@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "okc"
+sed -i "s/PREV_IFS=\$IFS/PREV_IFS=\$IFSD/g" /home/jiren/test/openstackope.sh
